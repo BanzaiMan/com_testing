@@ -1,2 +1,3 @@
 sudo: required
 os: windows
+dist: server-2016
