@@ -7,3 +7,7 @@ before_install:
   - curl.exe -O https://build-staging.travis-ci.com/files/casher
   - chmod +x casher
   
+script:
+  - cat casher
+  - ./casher add foo
+  
