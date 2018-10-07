@@ -4,8 +4,7 @@ group: dev
 language: bash
 
 cache:
-  edge:
-    branch: ha-file-null
+  branch: ha-file-null
   directories:
     - test
 script:
