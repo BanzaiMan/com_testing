@@ -3,11 +3,13 @@ os: windows
 group: dev
 language: bash
 
+env:
+  - CASHER_DIR=$HOME/.casher
 before_install:
-  - curl.exe -O https://build-staging.travis-ci.com/files/casher
-  - chmod +x casher
+  - export PATH=$PATH:$CASHER_DIR/bin
+  - curl -sf -o $CASHER_DIR/bin/casher https://raw.githubusercontent.com/travis-ci/casher/master/bin/casher
   
 script:
-  - cat casher
-  - ./casher add foo
+  - cat $CASHER_DIR/bin/casher
+  - casher add foo
   
