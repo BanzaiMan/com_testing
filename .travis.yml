@@ -3,14 +3,12 @@ os: windows
 group: dev
 language: bash
 
-env:
-  - CASHER_DIR=$HOME/.casher
-before_install:
-  - export PATH=$PATH:$CASHER_DIR/bin
-  - mkdir -p $CASHER_DIR/bin
-  - curl -sf -o $CASHER_DIR/bin/casher https://raw.githubusercontent.com/travis-ci/casher/master/bin/casher
-  
+cache:
+  edge:
+    branch: ha-file-null
+  directories:
+    - test
 script:
   - cat $CASHER_DIR/bin/casher
-  - casher add foo
+  - cat $HOME/build.sh
   
