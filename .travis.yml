@@ -9,6 +9,6 @@ cache:
   directories:
     - test
 script:
-  - curl -o $CASHER_DIR/bin/casher https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher
-  - curl -O https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher && mv casher $CASHER_DIR/bin/casher
+  - curl -o C:/Users/travis/.casher/bin/casher https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher
+  - curl -O https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher && mv casher C:/Users/travis/bin/casher
   - casher
