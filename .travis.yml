@@ -1,4 +1,2 @@
 sudo: required
-os: windows
-group: dev
 language: node_js
