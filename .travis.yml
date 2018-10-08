@@ -5,6 +5,7 @@ language: bash
 
 cache:
   branch: ha-win-debug
+  debug: true
   directories:
     - test
 script:
