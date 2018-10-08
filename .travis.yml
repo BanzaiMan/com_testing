@@ -10,5 +10,5 @@ cache:
     - test
 script:
   - curl -o $CASHER_DIR/bin/casher https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher
-  - curl -O -o https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher && mv casher $CASHER_DIR/bin/casher
+  - curl -O https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher && mv casher $CASHER_DIR/bin/casher
   - casher
