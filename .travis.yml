@@ -1,14 +1,4 @@
 sudo: required
 os: windows
 group: dev
-language: bash
-
-cache:
-  branch: ha-file-null
-#  debug: true
-  directories:
-    - test
-script:
-  - curl -sf -o C:/Users/travis/.casher/bin/casher https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher
-  - curl -sf -O https://raw.githubusercontent.com/travis-ci/casher/ha-win-debug/bin/casher && mv casher C:/Users/travis/bin/casher
-  - casher
+language: node_js
