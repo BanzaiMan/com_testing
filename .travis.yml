@@ -9,5 +9,3 @@ cache:
     - test
 script:
   - cat $CASHER_DIR/bin/casher
-  - cat $HOME/build.sh
-  
