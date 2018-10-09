@@ -1,3 +1,7 @@
 sudo: required
 language: node_js
 os: windows
+node_js: stable
+cache:
+  directories:
+    - .node_modules
