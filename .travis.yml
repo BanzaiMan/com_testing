@@ -1,7 +1,5 @@
-language: ruby
+language: erlang
 
-rvm:
-  - '2.5.1'
 os:
   - linux
   - osx
