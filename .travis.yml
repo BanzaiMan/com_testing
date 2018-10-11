@@ -13,3 +13,4 @@ before_install:
   - export PATH=${TRAVIS_HOME}/bin:$PATH
   - choco install rsync
   - env GIMME_DEBUG=1 gimme 1.10.1
+  - go version
