@@ -11,4 +11,5 @@ before_install:
   - curl -sLf -o ${TRAVIS_HOME}/bin/gimme https://build-staging.travis-ci.com/files/gimme
   - chmod +x ${TRAVIS_HOME}/bin/gimme
   - export PATH=${TRAVIS_HOME}/bin:$PATH
+  - choco install rsync
   - env GIMME_DEBUG=1 gimme 1.10.1
