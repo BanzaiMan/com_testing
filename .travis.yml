@@ -13,3 +13,7 @@ cache:
 
 node_js:
   - '10'
+
+script:
+  - cat $CASHER_DIR/bin/casher
+  
