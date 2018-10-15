@@ -7,8 +7,7 @@ filter_secrets: false
 
 cache:
   debug: true
-  edge:
-    branch: bash
+  branch: bash
   directories:
     - custom_cache
 
