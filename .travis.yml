@@ -15,4 +15,4 @@ node_js:
   - '10'
 
 script:
-  - dat > custom_cache/date
+  - date > custom_cache/date
