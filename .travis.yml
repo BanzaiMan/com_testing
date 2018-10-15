@@ -10,7 +10,7 @@ filter_secrets: false
 
 cache:
   debug: true
-  branch: bash
+  branch: bash-rebase
   directories:
     - custom_cache
 
