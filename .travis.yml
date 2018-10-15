@@ -14,4 +14,5 @@ cache:
 node_js:
   - '10'
 
-script: skip
+script:
+  - dat > custom_cache/date
