@@ -3,5 +3,11 @@ os: windows
 filter_secrets: redirect_io
 language: node_js
 
+cache:
+  edge:
+    branch: bash
+  directories:
+    - custom_cache
+
 node_js:
   - '10'
