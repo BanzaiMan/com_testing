@@ -1,5 +1,8 @@
 sudo: false
-os: windows
+os: 
+  - windows
+  - linux
+  - osx
 filter_secrets: redirect_io
 language: node_js
 
