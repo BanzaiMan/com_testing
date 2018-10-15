@@ -18,4 +18,5 @@ node_js:
   - '10'
 
 script:
+  - cat custom_cache/date
   - date > custom_cache/date
