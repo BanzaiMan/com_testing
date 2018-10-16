@@ -1,8 +1,16 @@
 sudo: false
 os: windows
-
+filter_secrets: false
 language: go
 
 go:
   - '1.10.x'
+
+jobs:
+  include:
+    - script: echo yes
+    - name: second stage
+      script: skip
+    - name: third stage
+      script: echo success
 
