@@ -3,7 +3,6 @@ os:
   - windows
   - linux
   - osx
-filter_secrets: redirect_io
 language: node_js
 
 filter_secrets: false
@@ -16,6 +15,11 @@ cache:
 node_js:
   - '10'
 
-script:
-  - cat custom_cache/date
-  - date > custom_cache/date
+script: skip
+
+deploy:
+  provider: script
+  script: echo yes!
+  on:
+    all_branches: true
+    
