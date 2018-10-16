@@ -9,6 +9,7 @@ language: node_js
 filter_secrets: false
 
 cache:
+  branch: bash
   directories:
     - custom_cache
 
