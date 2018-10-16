@@ -5,14 +5,8 @@ language: node_js
 
 filter_secrets: false
 
-cache:
-  debug: true
-  branch: bash
-  directories:
-    - custom_cache
-
 node_js:
   - '10'
 
 script:
-  - date > custom_cache/date
+  - md5deep64 --help
