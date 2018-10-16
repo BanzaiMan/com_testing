@@ -1,6 +1,6 @@
 sudo: false
 os: windows
-
+filter_secrets: false
 language: go
 
 go:
