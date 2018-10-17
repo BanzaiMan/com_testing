@@ -4,11 +4,16 @@ os:
   - linux
   - osx
 language: node_js
+filter_secrets: false
 
 cache:
   branch: bash
   directories:
     - custom_cache
 
+install: skip
+script:
+  - grep FOO ~/build.sh
+  
 node_js:
   - '10'
