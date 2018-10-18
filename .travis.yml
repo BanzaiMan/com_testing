@@ -12,3 +12,4 @@ script:
   
 node_js:
   - '10'
+
