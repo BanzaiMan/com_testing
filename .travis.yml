@@ -3,6 +3,8 @@ os: windows
 
 language: go
 
+script:
+  - true
+
 go:
   - '1.10.x'
-
