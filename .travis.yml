@@ -17,5 +17,4 @@ jobs:
     - name: test3
     
 notifications:
-  email: asari.ruby@gmail.com
-  
+  email: false
