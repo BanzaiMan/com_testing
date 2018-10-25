@@ -4,8 +4,7 @@ os:
 language: node_js
 
 install: skip
-script:
-  - false
+script: skip
 node_js:
   - '10'
 
@@ -16,4 +15,5 @@ jobs:
     - name: test3
     
 notifications:
-  email: asari.ruby@gmail.com
+  email: false
+  
