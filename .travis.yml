@@ -18,3 +18,9 @@ notifications:
     rooms:
       - secure: "AwiYcHtWiJbwR6EAMPrPHsssktiRrJ36VxN/9RgbwAT/7E3fhc/H7wK6uUlEVjuW+RWDQ2VvLMCS8Tre/8JKv9adzozsPlRU2yaKjswTaG5QKOwbbIIHfyfaey7vSk6fKgAtMxrC7obgXPoJMUUpv2YPQjfJE//ueRGVqj/2qG8sl407iZYzMFyO+vJZViWnHM3RbFHd/VCc5No4ovG3Z8Xu/Fxspk3MGN7jIxAnVLWympN0nzAgYYnqZEe8sQfHYLnLOZZDLd36YsilcOVJMfNlG61n+outBVNYlN/F5zefpGjBUwv2Vdf3cq4Hgz7gJ9+5ZbEgMk4bzUn+H+IUbvME31OoXTBAFonNifaO340Nm6aN0yaBOZuJs6pJS9ryfn/+PNaDG/8AE1E6u1VGdgr/mEL03AhkExy/iK/dnSAq/crZwhLE8goXGI7HrVEaAtZ+jyvRnWRYSrTH5wfGXstNNqAQh7DcNY74cdsUlazytLizzdqudAg+wC5boNG5oLOb78omluQkOb58L7tQR2j72/w069L2aGWeloXhivL3zW5D3J7RJqvqttFlimWceHfWStXuGJdfHF/AKChJa6IUs5xbfct8rPX1l7P2fmIgAkW5g3J5XZa53OxR2UYrhMHCAcGLorGG1JKMIGIYiwiwwKsA6DyiubGpD74xNYc="
     on_success: always
+    template:
+      - "Build <%{build_url}|#%{build_number}> %{build_id} (<%{compare_url}|%{commit}>) of %{repository}:%{branch} by %{author} %{result} in %{duration}"
+      - "_%{commit_message}_"
+      - "*%{message}*"
+      - "~%{message}~"
+      
