@@ -8,10 +8,6 @@ script: skip
 node_js:
   - '10'
 
-jobs:
-  include:
-    - stage: test1
-    - stage: test2
 notifications:
   email: false
   slack:
@@ -24,3 +20,9 @@ notifications:
       - "*%{message}*"
       - "~%{message}~"
       - "`use monotype`"      
+      - >-
+        "```
+          foo bar
+          multiline 
+          pre-formatted comment
+         ```"
