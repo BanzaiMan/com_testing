@@ -23,4 +23,4 @@ notifications:
       - "_%{commit_message}_"
       - "*%{message}*"
       - "~%{message}~"
-      
+      - "`use monotype`"      
