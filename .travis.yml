@@ -1,12 +1,6 @@
 sudo: false
 os: windows
-filter_secrets: redirect_io
-language: node_js
+language: ruby
 
-filter_secrets: false
-
-node_js:
-  - '10'
-
-script:
-  - md5deep64 --help
+install: skip
+script: skip
