@@ -1,6 +1,6 @@
 sudo: false
 os: windows
-language: ruby
+language: minimal
 
 install: skip
 script: skip
