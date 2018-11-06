@@ -1,6 +1,7 @@
 sudo: false
 os: windows
-language: minimal
+language: shell
 
 install: skip
-script: skip
+script:
+  - echo $TRAVIS_HOME
