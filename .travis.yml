@@ -1,7 +1,6 @@
-sudo: false
-os: windows
-language: shell
+dist: xenial
+language: php
+php: 7.4
 
 install: skip
-script:
-  - echo $TRAVIS_HOME
+script: skip
