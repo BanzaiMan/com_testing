@@ -1,10 +1,5 @@
-language: ruby
-dist: xenial
-rvm:
-  - '2.5.1'
-addons:
-  snaps:
-    - snap1
-    - snap2
-  foobar: true
-  
+os: freebsd
+dist: '12.1'
+language: c
+install: skip
+script: skip
