@@ -3,4 +3,3 @@ dist: '12.1'
 language: c
 install: skip
 script: skip
-
