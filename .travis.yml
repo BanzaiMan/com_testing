@@ -1,6 +1,10 @@
 os: freebsd
 dist: '12.1'
-language: c
+
+language: bash
 install: skip
 script: skip
 
+cache:
+  directories:
+    - foo/bar
