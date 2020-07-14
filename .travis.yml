@@ -8,3 +8,4 @@ script: skip
 cache:
   directories:
     - foo/bar
+
