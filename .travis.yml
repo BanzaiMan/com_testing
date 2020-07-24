@@ -1,7 +1,1 @@
 language: erlang
-
-os:
-  - linux
-  - osx
-  - windows
-
