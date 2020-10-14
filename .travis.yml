@@ -5,3 +5,4 @@ language: go
 script: skip
 go:
   - '1.12.x'
+
