@@ -1,10 +1,5 @@
 language: ruby
-dist: xenial
-rvm:
-  - '2.5.1'
-addons:
-  snaps:
-    - snap1
-    - snap2
-  foobar: true
-  
+os: osx
+osx_image: xcode12u
+script:
+  - xcrun --sdk macosx --show-sdk-path
