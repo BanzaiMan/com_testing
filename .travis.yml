@@ -5,6 +5,6 @@ jobs:
     - stage: test
       script: skip
     - # stage name not required, will continue to use `test`
-      script: true
+      script: skip
     - stage: deploy
       script: skip
