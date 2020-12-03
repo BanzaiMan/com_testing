@@ -1,10 +1,10 @@
 language: ruby
 dist: xenial
-rvm:
-  - '2.5.1'
-addons:
-  snaps:
-    - snap1
-    - snap2
-  foobar: true
-  
+jobs:
+  include:
+    - stage: test
+      script: skip
+    - # stage name not required, will continue to use `test`
+      script: skip
+    - stage: deploy
+      script: skip
