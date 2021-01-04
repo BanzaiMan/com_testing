@@ -1,4 +1,9 @@
 language: ruby
 dist: focal
 rvm:
-  - '3.0.0-preview2'
+  - '3.0.0'
+  
+before_script:
+  - echo 1
+  - echo 2
+  
