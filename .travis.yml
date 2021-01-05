@@ -1,9 +1,13 @@
 language: ruby
 dist: focal
-rvm:
-  - '3.0.0'
-  
-before_script:
-  - echo 1
-  - echo 2
-  
+
+install: skip
+
+script:
+  - |
+    echo building
+    if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
+      echo "****> linux <****";
+    elif [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      echo "----> osx <----";
+    fi
