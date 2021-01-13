@@ -3,12 +3,9 @@ dist: focal
 
 install: skip
 
-script:
-  - |
-    echo building
-    if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-      echo "****> linux <****";
-    elif [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-      echo "----> osx <----";
-    fi
-    echo $SECRET
+script: skip
+
+notifications:
+  email:
+    on_success: always
+
