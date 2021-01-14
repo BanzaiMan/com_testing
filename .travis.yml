@@ -1,11 +1,15 @@
 language: ruby
 dist: focal
 
-cache: bundler
+cache:
+  directories:
+    - foo
 
 install: skip
 
-script: skip
+script:
+  - mkdir foo
+  - touch foo/bar
 
 notifications:
   email:
