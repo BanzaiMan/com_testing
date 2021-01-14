@@ -1,6 +1,8 @@
 language: ruby
 dist: focal
 
+cache: bundler
+
 install: skip
 
 script: skip
