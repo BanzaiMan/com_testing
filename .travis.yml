@@ -6,4 +6,4 @@ install:
   - gem install faraday
 
 script:
-  - ruby -rfaraday -e "Faraday.new('https://coveralls.io/').get('/api/v1')
+  - ruby -rfaraday -e "Faraday.new('https://coveralls.io/').get('/api/v1')"
