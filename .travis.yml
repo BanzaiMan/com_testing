@@ -1,17 +1,9 @@
 language: ruby
 dist: focal
+rvm: '2.6.6'
 
-cache:
-  directories:
-    - foo
-
-install: skip
+install:
+  - gem install faraday
 
 script:
-  - mkdir foo
-  - touch foo/bar
-
-notifications:
-  email:
-    on_success: always
-
+  - ruby -rfaraday -e "Faraday.new('https://coveralls.io/').get('/api/v1')
